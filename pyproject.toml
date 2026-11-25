@@ -1,0 +1,10 @@
+[project]
+name = "metadata-writeback"
+version = "0.1.0"
+description = "Make an LLM append a machine-readable METADATA block (JSON wrapped in turn-specific markers) to its reply; split body from metadata, read broken JSON leniently, cross-check declared tools against the execution log, and bounce empty or inflated replies."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
